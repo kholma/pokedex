@@ -7,11 +7,12 @@
 <meta name="author" content="">
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="validateSearch.js"></script>
 </head>
 <body>
     <h1>Pokédex</h1>
     <form class="example" action="action_page.php">
-        <input type="text" placeholder= "Search Pokemon by number" name="search">
+        <input type="text" placeholder= "Search Pokemon by number" name="search" onsubmit="return validateNum()">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 
