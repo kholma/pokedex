@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>g
+<head>
 <meta charset="utf-8">
 <title>SE 3316 Lab 1</title>
 <meta name="description" content="">
@@ -11,13 +11,13 @@
 </head>
 <body>
     <h1>Pokédex</h1>
-    <form class="example" action="action_page.php">
-        <input type="text" placeholder= "Search Pokemon by number" name="search" onsubmit="return validateNum()">
+    <form name="numSearch" class="formstyle" action="action_page.php">
+        <input type="text" placeholder= "Search Pokemon by number" name="num" onsubmit="return validateNum()">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 
-    <form class="example" action="action_page.php">
-        <input type="text" placeholder= "Search Pokemon by name" name="search">
+    <form name="nameSearch" class="formstyle" action="action_page.php">
+        <input type="text" placeholder= "Search Pokemon by name" name="name" onsubmit="return validateName()">
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 

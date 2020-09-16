@@ -5,3 +5,17 @@ function validateNum(){
     }
 
 }
+
+function validateName(){
+    var letters=/^[A-Za-z]+$/;
+    var x=document.forms["nameSearch"]["name"].value;
+    if(x.length>20){
+        return false;
+    }
+    if(x.value.match(letters)){
+        return true;
+    }
+    if(x.value.match(letters)){
+        return false;
+    }
+}
