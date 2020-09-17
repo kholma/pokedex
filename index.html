@@ -7,7 +7,6 @@
 <meta name="author" content="">
 <link rel="stylesheet" href="style.css" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="validateSearch.js"></script>
 </head>
 <body>
     <h1>Pokédex</h1>
@@ -263,10 +262,6 @@ var pokedex=[{name: "Bulbasaur", number:1, rarity:4, evolution:1, chargeMove:"Sl
             {name: "Raticate", number:20, rarity:4, evolution:2, chargeMove:"Dig"}
 ];
 
-
-
-
-
 function validateNum(){
    let display=[];
     var x =document.forms["numSearch"]["num"].value;
@@ -279,9 +274,10 @@ function validateNum(){
         alert("Please enter a valid input");
         return false;
     }
-    for(var i=0; i<pokedex.length;i++){
-        if(pokedex[i].num.includes(x)){
-            alert(pokedex[i].name+" "+pokedex[i].number+" "+pokedex[i].rarity);
+    for(let i=0; i<pokedex.length;i++){
+    if(pokedex[i].number.toString().includes(x)){
+    
+        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
          display.push(pokedex[i]);
          if(display.length>=5){
             break;
@@ -295,33 +291,32 @@ function validateName(){
    let display=[];
     var letters=/^[A-Za-z]+$/;
     var x=document.forms["nameSearch"]["name"].value;
-    x=x.toLowerCase();
+    
     
     if(x.length>20){
         alert("Please enter valid input");
         return false;
     }
-    if(x.value.match(letters)){
-        return true;
+    if(x.search(letters)){
+        alert("Please enter a valid input.");
+return true;
     }
-    if(x.value.match(letters)!=true){
-        alert("Please enter valid input");
-        return false;
-    }
+    
     if(x.value==""){
         alert("Please enter a valid input");
         return false;
     }
 
-    for(var i=0; i<pokedex.length;i++){
-        if(pokedex[i].name.includes(x)){
-            alert(pokedex[i]);
+    for(let i=0; i<pokedex.length;i++){
+        x=x.toLowerCase();
+        if(pokedex[i].name.toLowerCase().includes(x)){
+        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
            display.push(pokedex[i]);
            if(display.length>=5){
               break;
             
            }
-           
+        
         }
 
     }
