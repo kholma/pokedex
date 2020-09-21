@@ -12,13 +12,19 @@
     <h1>Pokédex</h1>
     <form name="numSearch" class="formstyle" action="" onsubmit="return validateNum()">
         <input type="text" placeholder= "Search Pokemon by number" name="num">
-        <button type="submit" id="numbtn" onclick="return validateNum()">Search</button>
+        <button type="submit" id="numbtn" onclick="return validateNum(); return displayModal()">Search</button>
     </form>
 
     <form name="nameSearch" class="formstyle" action="" onsubmit="return validateName()">
         <input type="text" placeholder= "Search Pokemon by name" name="name">
         <button type="submit" id="namebtn">Search</button>
     </form>
+    <div id="numModal" class="modal">
+       <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>text </p>
+       </div>
+    </div>
 
     <ul> 
         <li class="outer sludge"> Bulbasaur
@@ -262,6 +268,22 @@ var pokedex=[{name: "Bulbasaur", number:1, rarity:4, evolution:1, chargeMove:"Sl
             {name: "Raticate", number:20, rarity:4, evolution:2, chargeMove:"Dig"}
 ];
 
+var modal=document.getElementById("numModal");
+var span = document.getElementsByClassName("close")[0];
+
+function displayModal(){
+   modal.style.display="block";
+}
+
+span.onclick=function(){
+   modal.style.display=none();
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+
 function validateNum(){
    let display=[];
     var x =document.forms["numSearch"]["num"].value;
@@ -277,9 +299,9 @@ function validateNum(){
     for(let i=0; i<pokedex.length;i++){
     if(pokedex[i].number.toString().includes(x)){
     
-        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
+        //alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
          display.push(pokedex[i]);
-         if(display.length>=5){
+         if(display.length==5){
             break;
          }
         }
@@ -310,16 +332,16 @@ return true;
     for(let i=0; i<pokedex.length;i++){
         x=x.toLowerCase();
         if(pokedex[i].name.toLowerCase().includes(x)){
-        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
+       // alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
            display.push(pokedex[i]);
-           if(display.length>=5){
+           if(display.length==5){
               break;
-            
            }
         
         }
 
     }
+    
 }
 </script>
 </html>
