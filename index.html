@@ -16,7 +16,7 @@
     </form>
 
     <form name="nameSearch" class="formstyle" action="" onsubmit="return validateName()" id="namebutton">
-        <input type="text" placeholder= "Search Pokemon by name" name="name">
+        <input type="text" placeholder= "Search Pokemon by name" name="name" id="nameSearch" onkeydown="filterNameList()">
         <button type="submit" id="namebtn">Search</button>
     </form>
      
@@ -247,115 +247,132 @@ document.getElementById("namebutton").appendChild(div);
 
 var unorderedList=document.createElement("UL");
 div.appendChild(unorderedList);
+unorderedList.setAttribute("id","searchUL");
 
 var li1=document.createElement("LI");
 var p1=document.createTextNode("Bulbasaur");
 unorderedList.appendChild(li1);
 li1.appendChild(p1);
+l1.setAttribute("id","l1");
 
 var li2=document.createElement("LI");
 var p2=document.createTextNode("Ivysaur");
 unorderedList.appendChild(li2);
 li2.appendChild(p2);
+l2.setAttribute("id","l2");
 
 var li3=document.createElement("LI");
 var p3=document.createTextNode("Venusaur");
 unorderedList.appendChild(li3);
 li3.appendChild(p3);
+l3.setAttribute("id","l3");
 
 var li4=document.createElement("LI");
 var p4=document.createTextNode("Charmander");
 unorderedList.appendChild(li4);
 li4.appendChild(p4);
+l4.setAttribute("id","l4");
 
 var li5=document.createElement("LI");
 var p5=document.createTextNode("Charmeleon");
 unorderedList.appendChild(li5);
 li5.appendChild(p5);
+l5.setAttribute("id","l5");
 
 var li6=document.createElement("LI");
 var p6=document.createTextNode("Charizard");
 unorderedList.appendChild(li6);
 li6.appendChild(p6);
+l6.setAttribute("id","l6");
 
 var li7=document.createElement("LI");
 var p7=document.createTextNode("Squirtle");
 unorderedList.appendChild(li7);
 li7.appendChild(p7);
+l7.setAttribute("id","l7");
 
 var li8=document.createElement("LI");
 var p8=document.createTextNode("Wartortle");
 unorderedList.appendChild(li8);
 li8.appendChild(p8);
+l8.setAttribute("id","l8");
 
 var li9=document.createElement("LI");
 var p9=document.createTextNode("Blastoise");
 unorderedList.appendChild(li9);
 li9.appendChild(p9);
+l9.setAttribute("id","l9");
 
 var li10=document.createElement("LI");
 var p10=document.createTextNode("Caterpie");
 unorderedList.appendChild(li10);
 li10.appendChild(p10);
+l10.setAttribute("id","l10");
 
 var li11=document.createElement("LI");
 var p11=document.createTextNode("Metapod");
 unorderedList.appendChild(li11);
 li11.appendChild(p11);
+l11.setAttribute("id","l11");
 
 var li12=document.createElement("LI");
 var p12=document.createTextNode("Butterfree");
 unorderedList.appendChild(li12);
 li12.appendChild(p12);
+l12.setAttribute("id","l12");
 
 var li13=document.createElement("LI");
 var p13=document.createTextNode("Weedle");
 unorderedList.appendChild(li13);
 li13.appendChild(p13);
+l13.setAttribute("id","l13");
 
 var li14=document.createElement("LI");
 var p14=document.createTextNode("Kakuna");
 unorderedList.appendChild(li14);
 li14.appendChild(p14);
+l14.setAttribute("id","l14");
 
 var li15=document.createElement("LI");
 var p15=document.createTextNode("Beedrill");
 unorderedList.appendChild(li15);
 li15.appendChild(p15);
+l15.setAttribute("id","l15");
 
 var li16=document.createElement("LI");
 var p16=document.createTextNode("Pidgey");
 unorderedList.appendChild(li16);
 li16.appendChild(p16);
+l16.setAttribute("id","l16");
 
 var li17=document.createElement("LI");
 var p17=document.createTextNode("Pidgeotto");
 unorderedList.appendChild(li17);
 li17.appendChild(p17);
+l17.setAttribute("id","l17");
 
 var li18=document.createElement("LI");
 var p18=document.createTextNode("Pidgeot");
 unorderedList.appendChild(li18);
 li18.appendChild(p18);
+l18.setAttribute("id","l18");
 
 var li19=document.createElement("LI");
 var p19=document.createTextNode("Rattata");
 unorderedList.appendChild(li19);
 li19.appendChild(p19);
+l19.setAttribute("id","l19");
 
 var li20=document.createElement("LI");
 var p20=document.createTextNode("Raticate");
 unorderedList.appendChild(li20);
 li20.appendChild(p20);
+l20.setAttribute("id","l20");
 
-
-
-
-
-
-
-
-function addListItem(){
+function filterNameList(){
+var nameSearch, lowerSearch, ul, li, a, i, txtValue;
+nameSearch=document.getElementById("nameSearch");
+lowerSearch=nameSearch.value.toLowerCase();
 
 }
 
