@@ -10,8 +10,8 @@
 </head>
 <body>
     <h1>Pokédex</h1>
-    <form name="numSearch" class="formstyle" action="" onsubmit="return validateNum()">
-        <input type="text" placeholder= "Search Pokemon by number" name="num">
+    <form name="numSearch" class="formstyle" action="" onsubmit="return validateNum()" id=numbutton>
+        <input type="text" placeholder= "Search Pokemon by number" name="num" id="numSearch" onkeyup="filterNumList()">
         <button type="submit" id="numbtn">Search</button>
     </form>
 
