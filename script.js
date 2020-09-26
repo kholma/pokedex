@@ -9,9 +9,11 @@ div.appendChild(unorderedList);
 unorderedList.setAttribute("id","searchUL");
 
 var li1=document.createElement("LI");
-var p1=document.createTextNode("Bulbasaur");
 unorderedList.appendChild(li1);
+var p1=document.createTextNode("Bulbasaur- Number: 1");
 li1.appendChild(p1);
+var p1num=document.createTextNode("Number: 1");
+
 
 var li2=document.createElement("LI");
 var p2=document.createTextNode("Ivysaur");
@@ -72,7 +74,6 @@ var li13=document.createElement("LI");
 var p13=document.createTextNode("Weedle");
 unorderedList.appendChild(li13);
 li13.appendChild(p13);
-l13.setAttribute("id","l13");
 
 var li14=document.createElement("LI");
 var p14=document.createTextNode("Kakuna");
