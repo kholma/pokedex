@@ -410,17 +410,6 @@ function validateNum(){
         alert("Please enter a valid input");
         return false;
     }
-    for(let i=0; i<pokedex.length;i++){
-    if(pokedex[i].number.toString().includes(x)){
-    
-        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
-         display.push(pokedex[i]);
-         if(display.length==5){
-            break;
-         }
-        }
-    }
-
 }
 
 function validateName(){
@@ -443,21 +432,6 @@ return true;
         return false;
     }
 
-    for(let i=0; i<pokedex.length;i++){
-        x=x.toLowerCase();
-        if(pokedex[i].name.toLowerCase().includes(x)){
-        alert(pokedex[i].name+" Number: "+pokedex[i].number+" Rarity: "+pokedex[i].rarity);
-           display.push(pokedex[i]);
-           if(display.length==5){
-              
-              break;
-           }
-           
-        
-        }
-
-    }
-    
 }
 </script>
 </html>
