@@ -10,7 +10,7 @@ unorderedList.setAttribute("id","searchUL");
 
 var li1=document.createElement("LI");
 unorderedList.appendChild(li1);
-var p1=document.createElement("p");
+var p1=document.createElement("P");
 var p1name=document.createTextNode("Bulbasaur");
 p1.appendChild(p1name);
 li1.appendChild(p1);
@@ -23,7 +23,7 @@ p1.appendChild(img1);
 
 var li2=document.createElement("LI");
 unorderedList.appendChild(li2);
-var p2=document.createElement("p");
+var p2=document.createElement("P");
 var p2name=document.createTextNode("Ivysaur");
 p2.appendChild(p2name);
 li2.appendChild(p2);
@@ -36,7 +36,7 @@ p2.appendChild(img2);
 
 var li3=document.createElement("LI");
 unorderedList.appendChild(li3);
-var p3=document.createElement("p");
+var p3=document.createElement("P");
 var p3name=document.createTextNode("Venusaur");
 p3.appendChild(p3name);
 li3.appendChild(p3);
@@ -49,12 +49,12 @@ p3.appendChild(img3);
 
 var li4=document.createElement("LI");
 unorderedList.appendChild(li4);
-var p4=document.createElement("p");
+var p4=document.createElement("P");
 var p4name=document.createTextNode("Charmander");
 p4.appendChild(p4name);
 li4.appendChild(p4);
 var p4info=document.createTextNode("Number: 4, Rarity: four, Evolution: one, Charge Move: Flame Burst");
-li4.appendChild(p4);
+li4.appendChild(p4info);
 var img4=document.createElement("IMG");
 img4.src="pokemon/4.png";
 img4.width="50";
@@ -62,7 +62,7 @@ p4.appendChild(img4);
 
 var li5=document.createElement("LI");
 unorderedList.appendChild(li5);
-var p5=document.createElement("p");
+var p5=document.createElement("P");
 var p5name=document.createTextNode("Charmeleon");
 p5.appendChild(p5name);
 li5.appendChild(p5);
@@ -75,7 +75,7 @@ p5.appendChild(img5);
 
 var li6=document.createElement("LI");
 unorderedList.appendChild(li6);
-var p6=document.createElement("p");
+var p6=document.createElement("P");
 var p6name=document.createTextNode("Charizard");
 p6.appendChild(p6name);
 li6.appendChild(p6);
@@ -88,7 +88,7 @@ p6.appendChild(img6);
 
 var li7=document.createElement("LI");
 unorderedList.appendChild(li7);
-var p7=document.createElement("p");
+var p7=document.createElement("P");
 var p7name=document.createTextNode("Squirtle");
 p7.appendChild(p7name);
 li7.appendChild(p7);
@@ -101,7 +101,7 @@ p7.appendChild(img7);
 
 var li8=document.createElement("LI");
 unorderedList.appendChild(li8);
-var p8=document.createElement("p");
+var p8=document.createElement("P");
 var p8name=document.createTextNode("Wartortle");
 p8.appendChild(p8name);
 li8.appendChild(p8);
@@ -114,7 +114,7 @@ p8.appendChild(img8);
 
 var li9=document.createElement("LI");
 unorderedList.appendChild(li9);
-var p9=document.createElement("p");
+var p9=document.createElement("P");
 var p9name=document.createTextNode("Blastoise");
 p9.appendChild(p9name);
 li9.appendChild(p9);
@@ -127,7 +127,7 @@ p9.appendChild(img9);
 
 var li10=document.createElement("LI");
 unorderedList.appendChild(li10);
-var p10=document.createElement("p");
+var p10=document.createElement("P");
 var p10name=document.createTextNode("Caterpie");
 p10.appendChild(p10name);
 li10.appendChild(p10);
@@ -140,7 +140,7 @@ p10.appendChild(img10);
 
 var li11=document.createElement("LI");
 unorderedList.appendChild(li11);
-var p11=document.createElement("p");
+var p11=document.createElement("P");
 var p11name=document.createTextNode("Metapod");
 p11.appendChild(p11name);
 li11.appendChild(p11);
@@ -153,7 +153,7 @@ p11.appendChild(img11);
 
 var li12=document.createElement("LI");
 unorderedList.appendChild(li12);
-var p12=document.createElement("p");
+var p12=document.createElement("P");
 var p12name=document.createTextNode("Butterfree");
 p12.appendChild(p12name);
 li12.appendChild(p12);
@@ -166,7 +166,7 @@ p12.appendChild(img12);
 
 var li13=document.createElement("LI");
 unorderedList.appendChild(li13);
-var p13=document.createElement("p");
+var p13=document.createElement("P");
 var p13name=document.createTextNode("Weedle");
 p13.appendChild(p13name);
 li13.appendChild(p13);
@@ -179,7 +179,7 @@ p13.appendChild(img13);
 
 var li14=document.createElement("LI");
 unorderedList.appendChild(li14);
-var p14=document.createElement("p");
+var p14=document.createElement("P");
 var p14name=document.createTextNode("Kakuna");
 p14.appendChild(p14name);
 li14.appendChild(p14);
@@ -192,7 +192,7 @@ p14.appendChild(img14);
 
 var li15=document.createElement("LI");
 unorderedList.appendChild(li15);
-var p15=document.createElement("p");
+var p15=document.createElement("P");
 var p15name=document.createTextNode("Beedrill");
 p15.appendChild(p15name);
 li15.appendChild(p15);
@@ -205,7 +205,7 @@ p15.appendChild(img15);
 
 var li16=document.createElement("LI");
 unorderedList.appendChild(li16);
-var p16=document.createElement("p");
+var p16=document.createElement("P");
 var p16name=document.createTextNode("Pidgey");
 p16.appendChild(p16name);
 li16.appendChild(p16);
@@ -218,7 +218,7 @@ p16.appendChild(img16);
 
 var li17=document.createElement("LI");
 unorderedList.appendChild(li17);
-var p17=document.createElement("p");
+var p17=document.createElement("P");
 var p17name=document.createTextNode("Pidgeotto");
 p17.appendChild(p17name);
 li17.appendChild(p17);
@@ -231,7 +231,7 @@ p17.appendChild(img17);
 
 var li18=document.createElement("LI");
 unorderedList.appendChild(li18);
-var p18=document.createElement("p");
+var p18=document.createElement("P");
 var p18name=document.createTextNode("Pidgeot");
 p18.appendChild(p18name);
 li18.appendChild(p18);
@@ -244,7 +244,7 @@ p18.appendChild(img18);
 
 var li19=document.createElement("LI");
 unorderedList.appendChild(li19);
-var p19=document.createElement("p");
+var p19=document.createElement("P");
 var p19name=document.createTextNode("Rattata");
 p19.appendChild(p19name);
 li19.appendChild(p19);
@@ -255,10 +255,9 @@ img19.src="pokemon/19.png";
 img19.width="50";
 p19.appendChild(img19);
 
-
 var li20=document.createElement("LI");
 unorderedList.appendChild(li20);
-var p20=document.createElement("p");
+var p20=document.createElement("P");
 var p20name=document.createTextNode("Raticate");
 p20.appendChild(p20name);
 li20.appendChild(p20);
@@ -274,11 +273,11 @@ function filterNameList(){
 let nameSearch, lowerSearch, ul, li, nameArray, nameValue;
 nameSearch=document.forms["nameSearch"]["name"];
 lowerSearch=nameSearch.value.toLowerCase();
-ul=document.getElementById("searchUL");
-li=ul.getElementsByTagName("p");
+ul=document.getElementsById("searchUL");
+li=ul.getElementsByTagName("LI");
 
 for(let i=0;i<li.length;i++){
-   nameArray=li[i];
+   nameArray=li[i].getElementsByTagName("P")[0];
    nameValue=nameArray.textContent||nameArray.innerText;
    if(nameValue.toLowerCase().indexOf(lowerSearch) > -1){
       li[i].style.display="";
