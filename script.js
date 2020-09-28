@@ -1,7 +1,4 @@
 var div=document.createElement("div");
-var node=document.createTextNode("Search Results:");
-
-div.appendChild(node);
 document.getElementById("namebutton").appendChild(div);
 
 var unorderedList=document.createElement("UL");
@@ -273,14 +270,19 @@ function filterNameList(){
 let nameSearch, lowerSearch, ul, li, nameArray, nameValue;
 nameSearch=document.forms["nameSearch"]["name"];
 lowerSearch=nameSearch.value.toLowerCase();
-ul=document.getElementsById("searchUL");
+ul=document.getElementById("searchUL");
 li=ul.getElementsByTagName("LI");
 
 for(let i=0;i<li.length;i++){
    nameArray=li[i].getElementsByTagName("P")[0];
    nameValue=nameArray.textContent||nameArray.innerText;
-   if(nameValue.toLowerCase().indexOf(lowerSearch) > -1){
+
+   if(nameValue.toLowerCase().includes(lowerSearch)){
       li[i].style.display="";
+   }
+   else if(lowerSearch == ""){
+        li[i].style.display="none";
+    
    }
    else{
       li[i].style.display="none";
@@ -312,18 +314,18 @@ function validateName(){
 
 
 function filterNumList(){
-    let numSearch, lowerSearch, ul, li, numArray, numValue;
+    let numSearch, ul, li, numArray, numValue;
     numSearch=document.forms["numSearch"]["num"];
-    lowerSearch=numSearch.value.toLowerCase();
     ul=document.getElementById("searchUL");
     li=ul.getElementsByTagName("LI");
     
     for(let i=0;i<li.length;i++){
        numArray=li[i];
        numValue=numArray.textContent||numArray.innerText;
-       if(numValue.toLowerCase().indexOf(lowerSearch) > -1){
+       if(numValue.indexOf(numSearch.value) > -1){
           li[i].style.display="";
        }
+    
        else{
           li[i].style.display="none";
        }
