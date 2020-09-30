@@ -107,6 +107,9 @@ form.formstyle button {
     clear: both;
     display: table;
   } 
+  li.searchList{
+      display: none;
+  }
 
   
 

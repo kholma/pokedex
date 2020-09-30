@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>SE 3316 Lab 1</title>
@@ -10,12 +10,12 @@
 </head>
 <body>
     <h1>Pokédex</h1>
-    <form name="numSearch" class="formstyle" action="" onsubmit="return validateNum()" id=numbutton>
+    <form name="numSearch" class="formstyle" onsubmit="return validateNum()" id=numbutton>
         <input type="text" placeholder= "Search Pokemon by number" name="num" id="numSearch" onkeyup="filterNumList()">
         <button type="submit" id="numbtn">Search</button>
     </form>
 
-    <form name="nameSearch" class="formstyle" action="" onsubmit="return validateName()" id="namebutton">
+    <form name="nameSearch" class="formstyle" onsubmit="return validateName()" id="namebutton">
         <input type="text" placeholder= "Search Pokemon by name" name="name" id="nameSearch" onkeyup="filterNameList()">
         <button type="submit" id="namebtn">Search</button>
     </form>
@@ -228,7 +228,6 @@
     <a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset">Pokemon data set</a>
     <a href="https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/">Pokemon excel</a>
 </div>
-
+<script src="script.js"></script> 
 </body>
-<script type="text/javascript" src="script.js"></script> 
 </html>

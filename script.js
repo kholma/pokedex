@@ -6,6 +6,7 @@ div.appendChild(unorderedList);
 unorderedList.setAttribute("id","searchUL");
 
 var li1=document.createElement("LI");
+li1.setAttribute("class","searchList");
 unorderedList.appendChild(li1);
 var p1=document.createElement("P");
 var p1name=document.createTextNode("Bulbasaur");
@@ -19,6 +20,7 @@ img1.width="50";
 p1.appendChild(img1);
 
 var li2=document.createElement("LI");
+li2.setAttribute("class","searchList");
 unorderedList.appendChild(li2);
 var p2=document.createElement("P");
 var p2name=document.createTextNode("Ivysaur");
@@ -32,6 +34,7 @@ img2.width="50";
 p2.appendChild(img2);
 
 var li3=document.createElement("LI");
+li3.setAttribute("class","searchList");
 unorderedList.appendChild(li3);
 var p3=document.createElement("P");
 var p3name=document.createTextNode("Venusaur");
@@ -45,6 +48,7 @@ img3.width="50";
 p3.appendChild(img3);
 
 var li4=document.createElement("LI");
+li4.setAttribute("class","searchList");
 unorderedList.appendChild(li4);
 var p4=document.createElement("P");
 var p4name=document.createTextNode("Charmander");
@@ -58,6 +62,7 @@ img4.width="50";
 p4.appendChild(img4);
 
 var li5=document.createElement("LI");
+li5.setAttribute("class","searchList");
 unorderedList.appendChild(li5);
 var p5=document.createElement("P");
 var p5name=document.createTextNode("Charmeleon");
@@ -71,6 +76,7 @@ img5.width="50";
 p5.appendChild(img5);
 
 var li6=document.createElement("LI");
+li6.setAttribute("class","searchList");
 unorderedList.appendChild(li6);
 var p6=document.createElement("P");
 var p6name=document.createTextNode("Charizard");
@@ -84,6 +90,7 @@ img6.width="50";
 p6.appendChild(img6);
 
 var li7=document.createElement("LI");
+li7.setAttribute("class","searchList");
 unorderedList.appendChild(li7);
 var p7=document.createElement("P");
 var p7name=document.createTextNode("Squirtle");
@@ -97,6 +104,7 @@ img7.width="50";
 p7.appendChild(img7);
 
 var li8=document.createElement("LI");
+li8.setAttribute("class","searchList");
 unorderedList.appendChild(li8);
 var p8=document.createElement("P");
 var p8name=document.createTextNode("Wartortle");
@@ -110,6 +118,7 @@ img8.width="50";
 p8.appendChild(img8);
 
 var li9=document.createElement("LI");
+li9.setAttribute("class","searchList");
 unorderedList.appendChild(li9);
 var p9=document.createElement("P");
 var p9name=document.createTextNode("Blastoise");
@@ -123,6 +132,7 @@ img9.width="50";
 p9.appendChild(img9);
 
 var li10=document.createElement("LI");
+li10.setAttribute("class","searchList");
 unorderedList.appendChild(li10);
 var p10=document.createElement("P");
 var p10name=document.createTextNode("Caterpie");
@@ -136,6 +146,7 @@ img10.width="50";
 p10.appendChild(img10);
 
 var li11=document.createElement("LI");
+li11.setAttribute("class","searchList");
 unorderedList.appendChild(li11);
 var p11=document.createElement("P");
 var p11name=document.createTextNode("Metapod");
@@ -149,6 +160,7 @@ img11.width="50";
 p11.appendChild(img11);
 
 var li12=document.createElement("LI");
+li12.setAttribute("class","searchList");
 unorderedList.appendChild(li12);
 var p12=document.createElement("P");
 var p12name=document.createTextNode("Butterfree");
@@ -162,6 +174,7 @@ img12.width="50";
 p12.appendChild(img12);
 
 var li13=document.createElement("LI");
+li13.setAttribute("class","searchList");
 unorderedList.appendChild(li13);
 var p13=document.createElement("P");
 var p13name=document.createTextNode("Weedle");
@@ -175,6 +188,7 @@ img13.width="50";
 p13.appendChild(img13);
 
 var li14=document.createElement("LI");
+li14.setAttribute("class","searchList");
 unorderedList.appendChild(li14);
 var p14=document.createElement("P");
 var p14name=document.createTextNode("Kakuna");
@@ -188,6 +202,7 @@ img14.width="50";
 p14.appendChild(img14);
 
 var li15=document.createElement("LI");
+li15.setAttribute("class","searchList");
 unorderedList.appendChild(li15);
 var p15=document.createElement("P");
 var p15name=document.createTextNode("Beedrill");
@@ -201,6 +216,7 @@ img15.width="50";
 p15.appendChild(img15);
 
 var li16=document.createElement("LI");
+li16.setAttribute("class","searchList");
 unorderedList.appendChild(li16);
 var p16=document.createElement("P");
 var p16name=document.createTextNode("Pidgey");
@@ -214,6 +230,7 @@ img16.width="50";
 p16.appendChild(img16);
 
 var li17=document.createElement("LI");
+li17.setAttribute("class","searchList");
 unorderedList.appendChild(li17);
 var p17=document.createElement("P");
 var p17name=document.createTextNode("Pidgeotto");
@@ -227,6 +244,7 @@ img17.width="50";
 p17.appendChild(img17);
 
 var li18=document.createElement("LI");
+li18.setAttribute("class","searchList");
 unorderedList.appendChild(li18);
 var p18=document.createElement("P");
 var p18name=document.createTextNode("Pidgeot");
@@ -240,6 +258,7 @@ img18.width="50";
 p18.appendChild(img18);
 
 var li19=document.createElement("LI");
+li19.setAttribute("class","searchList");
 unorderedList.appendChild(li19);
 var p19=document.createElement("P");
 var p19name=document.createTextNode("Rattata");
@@ -253,6 +272,7 @@ img19.width="50";
 p19.appendChild(img19);
 
 var li20=document.createElement("LI");
+li20.setAttribute("class","searchList");
 unorderedList.appendChild(li20);
 var p20=document.createElement("P");
 var p20name=document.createTextNode("Raticate");
@@ -277,13 +297,14 @@ for(let i=0;i<li.length;i++){
    nameArray=li[i].getElementsByTagName("P")[0];
    nameValue=nameArray.textContent||nameArray.innerText;
 
-   if(nameValue.toLowerCase().includes(lowerSearch)){
-      li[i].style.display="";
+   if(lowerSearch === ""){
+    li[i].style.display="none";
+
+}
+   else if(nameValue.toLowerCase().includes(lowerSearch)){
+      li[i].style.display="block";
    }
-   else if(lowerSearch == ""){
-        li[i].style.display="none";
-    
-   }
+  
    else{
       li[i].style.display="none";
    }
@@ -312,7 +333,6 @@ function validateName(){
  
  }
 
-
 function filterNumList(){
     let numSearch, ul, li, numArray, numValue;
     numSearch=document.forms["numSearch"]["num"];
@@ -322,8 +342,11 @@ function filterNumList(){
     for(let i=0;i<li.length;i++){
        numArray=li[i];
        numValue=numArray.textContent||numArray.innerText;
-       if(numValue.indexOf(numSearch.value) > -1){
-          li[i].style.display="";
+       if(numSearch.value==""){
+           li[i].style.display="none";
+       }
+      else if(numValue.indexOf(numSearch.value) > -1){
+          li[i].style.display="block";
        }
     
        else{
